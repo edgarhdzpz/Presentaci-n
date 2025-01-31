@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 export default function SliderPage() {
     const tarjetas = [
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada.jpg',
+            url: '/decora_fachada',
             comentario: 'Decoración con tabique'
         },
         {

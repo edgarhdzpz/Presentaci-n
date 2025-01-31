@@ -9,192 +9,192 @@ import { useEffect, useState } from "react";
 export default function SliderPage() {
     const tarjetas = [
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada.jpg',
+            url: '/fachada/decora_fachada.jpg',
             comentario: 'Decoración con tabique'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada2.jpg',
+            url: '/fachada/decora_fachada2.jpg',
             comentario: 'Decoración con madera'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada3.jpg',
+            url: '/fachada/decora_fachada3.jpg',
             comentario: 'Fachada de Arcos'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada4.jpg?',
+            url: '/fachada/decora_fachada4.jpg?',
             comentario: 'Fachada de Arcos'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada5.jpg',
+            url: '/fachada/decora_fachada5.jpg',
             comentario: 'Fachada con teja'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada6.jpg',
+            url: '/fachada/decora_fachada6.jpg',
             comentario: 'Fachada de pidras (marmol)'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada7.jpg',
+            url: '/fachada/decora_fachada7.jpg',
             comentario: 'Fachada con tabique'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada8.jpg?',
+            url: '/fachada/decora_fachada8.jpg?',
             comentario: 'Decoraciones con marmol'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada9.jpg',
+            url: '/fachada/decora_fachada9.jpg',
             comentario: 'Ventanales con blog aparente'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada10.jpg?',
+            url: '/fachada/decora_fachada10.jpg?',
             comentario: 'Ventanales con blog aparente'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada11.jpg',
+            url: '/fachada/decora_fachada11.jpg',
             comentario: 'Ventanales con blog aparente'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/decora_facha/decora_fachada12.jpg',
+            url: '/fachada/decora_fachada12.jpg',
             comentario: 'Ventanales con blog aparente'
         },
     ]
     const tarjetas2 = [
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic.jpg',
+            url: '/ceramicas/piso_ceramic.jpg',
             comentario: 'Ceramica'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic2.jpg',
+            url: '/ceramicas/piso_ceramic2.jpg',
             comentario: 'Ceramica'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic3.jpg',
+            url: '/ceramicas/piso_ceramic3.jpg',
             comentario: 'Alverca'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic4.jpg',
+            url: '/ceramicas/piso_ceramic4.jpg',
             comentario: 'Ceramica'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic5.jpg',
+            url: '/ceramicas/piso_ceramic5.jpg',
             comentario: 'Ceramica'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic6.jpg',
+            url: '/ceramicas/piso_ceramic6.jpg',
             comentario: 'Marmol'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic7.jpg',
+            url: '/ceramicas/piso_ceramic7.jpg',
             comentario: 'Ceramica'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic9.jpg',
+            url: '/ceramicas/piso_ceramic9.jpg',
             comentario: 'Ceramica'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic10.jpg',
+            url: '/ceramicas/piso_ceramic10.jpg',
             comentario: 'Alverca'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic11.jpg',
+            url: '/ceramicas/piso_ceramic11.jpg',
             comentario: 'Alverca'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/piso_ceramica/piso_ceramic12.jpg',
+            url: '/ceramicas/piso_ceramic12.jpg',
             comentario: 'Concreto'
         },
     ]
     const escaleras = [
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/escaleras/esca.jpg',
+            url: '/escaleras/esca.jpg',
             comentario: ''
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/escaleras/esca2.jpg',
+            url: '/escaleras/esca2.jpg',
             comentario: ''
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/escaleras/esca3.jpg',
+            url: '/escaleras/esca3.jpg',
             comentario: ''
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/escaleras/esca4.jpg',
+            url: '/escaleras/esca4.jpg',
             comentario: ''
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/escaleras/esca5.jpg',
+            url: '/escaleras/esca5.jpg',
             comentario: ''
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/escaleras/esca6.jpg',
+            url: '/escaleras/esca6.jpg',
             comentario: ''
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/escaleras/esca7.jpg',
+            url: '/escaleras/esca7.jpg',
             comentario: ''
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/escaleras/esca8.jpg',
+            url: '/escaleras/esca8.jpg',
             comentario: ''
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/escaleras/esca9.jpg',
+            url: '/escaleras/esca9.jpg',
             comentario: ''
         },
     ]
     const obras = [
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras1.jpg'
+            url: '/obras/obras1.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras2.jpg'
+            url: '/obras/obras2.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras3.jpg'
+            url: '/obras/obras3.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras4.jpg'
+            url: '/obras/obras4.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras5.jpg'
+            url: '/obras/obras5.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras6.jpg'
+            url: '/obras/obras6.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras7.jpg'
+            url: '/obras/obras7.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras8.jpg'
+            url: '/obras/obras8.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras9.jpg'
+            url: '/obras/obras9.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras10.jpg'
+            url: '/obras/obras10.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras11.jpg'
+            url: '/obras/obras11.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras12.jpg'
+            url: '/obras/obras12.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras13.jpg'
+            url: '/obras/obras13.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras14.jpg'
+            url: '/obras/obras14.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras15.jpg'
+            url: '/obras/obras15.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras16.jpg'
+            url: '/obras/obras16.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras17.jpg'
+            url: '/obras/obras17.jpg'
         },
         {
-            url: 'https://qucarwxgtqojymaahgrq.supabase.co/storage/v1/object/public/gallery_mar/services/obras_planos/obras18.jpg'
+            url: '/obras/obras18.jpg'
         },
     ]
 
