@@ -9,6 +9,22 @@ import { useEffect, useState } from "react";
 export default function SliderPage() {
     const tarjetas = [
         {
+            url: '/fachada/decora_fachada16.jpg',
+            comentario: 'Terminados con celosia'
+        },
+        {
+            url: '/fachada/decora_fachada17.jpg?',
+            comentario: 'Terminados con celosia'
+        },
+        {
+            url: '/fachada/decora_fachada18.jpg',
+            comentario: 'Terminados con celosia'
+        },
+        {
+            url: '/fachada/decora_fachada19.jpg',
+            comentario: 'Terminados con celosia'
+        },
+        {
             url: '/fachada/decora_fachada.jpg',
             comentario: 'Decoración con tabique'
         },
@@ -205,7 +221,7 @@ export default function SliderPage() {
             className="w-full md:w-[290px] h-[380px] md:h-[380px] bg-black p-2 border rounded-lg text-black relative"
         >
             <img src={tarjeta.url} alt="" className="object-cover w-full h-full" />
-            <p className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-blue-400 text-xl p-2">{tarjeta.comentario}</p>
+            <p className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-xl p-2">{tarjeta.comentario}</p>
         </div>
     );
 
@@ -215,7 +231,7 @@ export default function SliderPage() {
             className="w-full md:w-[250px] h-[340px] md:h-[340px] bg-black p-2 border rounded-lg text-black relative"
         >
             <img src={tarjeta2.url} alt="" className="object-cover w-full h-full" />
-            <p className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-blue-400 text-xl p-2">{tarjeta2.comentario}</p>
+            <p className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-xl p-2">{tarjeta2.comentario}</p>
         </div>
     );
 
@@ -225,7 +241,7 @@ export default function SliderPage() {
             className="w-full md:w-[280px] h-[370px] md:h-[370px] bg-black p-2 border rounded-lg text-black relative"
         >
             <img src={escaleras.url} alt="" className="object-cover w-full h-full" />
-            <p className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-blue-400 text-xl p-2">{escaleras.comentario}</p>
+            <p className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-xl p-2">{escaleras.comentario}</p>
         </div>
     );
 
@@ -235,7 +251,7 @@ export default function SliderPage() {
             className="w-full md:w-[280px] h-[370px] md:h-[370px] bg-black p-2 border rounded-lg text-black relative"
         >
             <img src={obra.url} alt="" className="object-cover w-full h-full" />
-            <p className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-blue-400 text-xl p-2">{obra.comentario}</p>
+            <p className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-xl p-2">{obra.comentario}</p>
         </div>
     );
 
@@ -247,7 +263,7 @@ export default function SliderPage() {
                 </h1>
                 <div class="bg-gray-400 py-10 px-4 sm:px-6 lg:px-8">
                     <div class="max-w-4xl mx-auto text-center">
-                        <h1 class="text-3xl font-bold text-gray-800 mb-6">¡Hola! Soy Marcos Guzmán Castellanos.</h1>
+                        <h1 class="text-3xl font-bold text-gray-800 mb-6">¡Hola! Soy Marcos Guzmán Castellanos ¡Orgullosamente constructor!!!.</h1>
                         <p class="text-lg text-gray-600 mb-6">Déjame contarte sobre mi pasión por la construcción. He dedicado años a convertirme en un experto en cada aspecto del proceso, desde la plomería hasta la electricidad, y desde los cimientos hasta las decoraciones con mármol y la pintura.</p>
                         <p class="text-lg text-gray-600 mb-6">Cuando se trata de plomería, resuelvo cualquier problema con las tuberías y diseño sistemas que aseguran un flujo de agua perfecto. Mi destreza en electricidad garantiza un suministro eléctrico confiable, mientras que mis sólidos cimientos son la base de los sueños de mis clientes.</p>
                         <p class="text-lg text-gray-600 mb-6">Pero lo que realmente me apasiona es el toque final. Cada detalle cuenta para mí, desde la meticulosa colocación de azulejos hasta la aplicación cuidadosa de la pintura. Me esfuerzo por dar vida a las visiones de mis clientes, añadiendo un toque de elegancia con decoraciones de mármol que elevan el ambiente de cualquier espacio.</p>
@@ -261,7 +277,7 @@ export default function SliderPage() {
                         height={380}
                         cardWidth={290}
                         items={tarjetas.map((tarjeta, index) => productCard(tarjeta, index))}
-                        className="my-6 mx4"
+                        className="my-6 mx4 text-center"
                     />
                 </div>
 
@@ -270,25 +286,25 @@ export default function SliderPage() {
                     height={340}
                     cardWidth={250}
                     items={tarjetas2.map((tarjeta2, index) => productCard2(tarjeta2, index))}
-                    className="my-6 mx4"
+                    className="my-6 mx4 text-center"
                 />
 
                 <h3 className="text-xl font-bold text-white text-center mb-4">Escaleras</h3>
-                <div className="max-w-screen-xl w-2/3 m-auto">
+                {/* <div className="max-w-screen-xl w-2/3 m-auto"> */}
                     <Slider
                         height={370}
                         cardWidth={280}
                         items={escaleras.map((escaleras, index) => productCard3(escaleras, index))}
-                        className="my-6 mx4"
+                        className="my-6 mx4 text-center"
                     />
-                </div>
+                {/* </div> */}
 
                 <h3 className="text-xl font-bold text-white text-center mb-4">Obras</h3>
                 <Slider
                     height={370}
                     cardWidth={280}
                     items={obras.map((obra, index) => productCard4(obra, index))}
-                    className="mx-4 mb-40"
+                    className="mx-4 mb-40 text-center"
                 />
 
                 <footer class="bg-gray-900 text-gray-300 py-8 bottom-0 left-0 w-full fixed p-4 rounded mt-10">
